@@ -1,7 +1,7 @@
 # Make DNS Gamer 0164797 as Macbook pro early 2013
 
 ![Screenshot](/Screenshots/screen2.png)
-![Screenshot](/Screenshots/screen1.png)
+![Screenshot](/Screenshots/screeen1.png)
 
 # Notebook specs:
  - Processor : i7 3630qm 2.4 Ghz with turboboost up to 3.4 Ghz , 6mb L3 cache.
