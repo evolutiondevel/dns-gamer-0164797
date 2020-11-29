@@ -20,7 +20,7 @@
 
  - Processor with Power managment  Config.plist + ssdt.aml in acpi/patched
  - Integrated Graphics HD4000 with qe/ci - Lilu + Whatevergreen
- - Keyboard + Touchpad  with ApplePS2SmartTouchpad.kext (but without gestures and settings via system preferences)
+ - Keyboard + Touchpad  with VoodooPS2Controoler
  - USB ports - USBinject All + UIAC-ALL.SSDT in acpi/patched + dsdt patch
  - Webcamera -  out of the box with patched usb
  - Wifi  - AR9485 - IO80211Family.kext( installed to S/L/E in Catalina ) and HS80211Family.kext in Kexts/Other for Big Sur
@@ -38,15 +38,10 @@
  - GT650m - optimus technology not supported in OS x (you can disable it for better power saving).
  - VGA port
  - HDMI audio - easy to patch , but i dont need this
- - Sometimes notebook cant wake from sleep.
  
  # Not tested
  
- - RTS CardReader
- 
- # Issues
- 
- - By default GT650m is not disabled , you can move SSDT-Quanta-3.aml from acpi/origin to acpi/patched directory, but be prepared to increased noise from cooling system, becouse it always run at 60-70% of max.
+ - RTS CardReader 
  
  # Notes for OSX 10.16 - 11.0.1 Big Sur
  
@@ -55,4 +50,5 @@
  - For download and install need mask notebook to macbook 11 and highter in config.plist , becouse older models not have official support
  - Need replace AptioMemiryFix-3drv to OpenRuntime.efi
  - If you are using HWmonitor.app , need replace to HWmonitorSMC2.app 
+ - ApplePS2smarttouchpad replaced with VoodooPs2Controoler, which support gestures and Settings via system trackpad options.
  
